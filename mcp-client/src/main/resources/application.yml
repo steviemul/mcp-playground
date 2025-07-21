@@ -1,0 +1,20 @@
+server:
+  port: 15080
+
+spring:
+  ai:
+    mcp:
+      client:
+        sse:
+          connections:
+            local-mcp-server:
+              url: http://localhost:16080
+        type: sync
+        request-timeout: 30s
+    ollama:
+      chat:
+        model: llama3.2
+        options:
+          model: llama3.2:3b
+      init:
+        pull-model-strategy: when_missing

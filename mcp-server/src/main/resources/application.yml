@@ -1,0 +1,13 @@
+server:
+  port:
+    16080
+
+spring:
+  ai:
+    mcp:
+      server:
+        name: local-mcp-server
+        version: 1.0.0
+        type: SYNC
+        stdio: false
+        sse-message-endpoint: /mcp/message
